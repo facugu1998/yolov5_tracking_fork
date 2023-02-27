@@ -178,10 +178,11 @@ def main(opt):
         "python",  dst_val_tools_folder / "scripts/run_mot_challenge.py",\
         "--BENCHMARK", opt.benchmark,\
         "--TRACKERS_TO_EVAL",  opt.eval_existing if opt.eval_existing else MOT_results_folder.parent.name,\
-        "--SPLIT_TO_EVAL", "train",\
+        "--SPLIT_TO_EVAL", "test",\
         "--METRICS", "HOTA", "CLEAR", "Identity",\
         "--USE_PARALLEL", "True",\
-        "--NUM_PARALLEL_CORES", "4"\
+        "--NUM_PARALLEL_CORES", "4",\
+        "--DO_PREPROC", "False" \
     ])
     
 
