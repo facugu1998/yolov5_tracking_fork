@@ -157,6 +157,7 @@ def main(opt):
                 "--device", str(tracking_subprocess_device), \
                 "--source", dst_seq_path, \
                 "--exist-ok", \
+                "--save-vid", \
                 "--save-txt", \
             ])
             processes.append(p)
